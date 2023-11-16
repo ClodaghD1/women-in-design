@@ -1,4 +1,3 @@
-# Women in Design
-[Version 1](https://clodaghd1.github.io/women-in-design/index.html)      
+# Women in Design     
 *13 November 2023*      
 Creating my first HTML page     
