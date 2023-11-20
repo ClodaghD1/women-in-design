@@ -22,4 +22,75 @@ h1, h2, blockquote {
 }
 p, blockquote {
     line height: 1.5%
-    margin-bottom: 1.5%
+    margin-bottom: 1.5rem;
+}
+h1 {
+    font size: 5.063rem
+    color: #f7f7f7;
+    font-weight: bold;
+    margin: 2rem 0 1rem 0;
+}
+h2 {
+    font size: 2.25rem
+    color: #f7ff7f7;
+    font-weight: semi-bold;
+    margin: 3rem 0 1rem 0;
+}
+
+blockquote {
+    font size: 1.75rem;
+    font-style: bold;
+    margin: 0
+    hanging-puncation: first;
+    text-indent: -0.75rem;
+}
+
+cite {
+    font size: 1.5 rem;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    font-style: bold;
+}
+
+header h2 {
+    font size: 2.25 rem;
+    font-style: semi-bold;
+    font-family: open sans; 
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+header p {
+    font-size: 1.4rem;
+    margin-bottom: 8rem;
+}
+/*-- Styling links ---*/
+a {
+    color: #f7f7f7
+    text decoration none;
+}
+
+a:hover {
+    color: #f7f7f7
+    border-bottom blue
+}
+
+    /*--- Style Nav ---*/
+    nav {
+        top: 0;
+        left: 0;
+        margin: 0;
+        background: blue
+        padding 2rem  0;
+        font-size: 0.8rem;
+    }
+
+nav ul {
+text-align: right; 
+text-transform: uppercase;
+text-
+}
+
+nav  {
+    color: #f7f7f7
+}
