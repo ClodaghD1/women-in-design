@@ -9,7 +9,7 @@
 body {
     background: #f7f7f7;
     color: #333333;
-    font-family: "Open Sans";
+    font-family: "Merriweather";
 }
 
 section, header {
@@ -17,6 +17,20 @@ section, header {
     max-width: 800px;
     margin: auto;
 }
+img {
+    display: block;
+    padding: 0%;
+    max-width: 800px;
+    margin: auto;
+}
+
+ .topimg {
+    margin-top: 0;
+    margin-bottom: 6rem;
+
+}
+
+.kernloose {letter-spacing: 5px;}
 
 nav h2 {
     text-align: left; 
@@ -47,6 +61,16 @@ nav h2 {
     color: white;
 }
 
+.blue li {
+    color: white;
+    font-family: "Roboto";
+}
+
+.blue a {
+    color: white;
+    font-style: oblique;
+}
+
 .blue blockquote {
     color: white;
 }
@@ -57,34 +81,45 @@ img {
     margin-bottom: 1em;
 }
 
+.dropcap {
+    font-family: "Merriweather", serif;
+    float: left;
+    line-height: 55%;
+    width: 7rem;
+
+}
+
 /*---- Styling typography ---*/
 h1, h2, blockquote {
-    color: #87460D;
+    color: #1F2383;
 }
 
 p, blockquote, h1 {
-    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
     line-height: 1.4;
+    font-family: "Roboto";
 }
 
 ul p {
-    margin: 0.5em 0 0.5em 0;
+    margin: 0.5em 0;
 }
 
 h1 {
     font-size: 5.653rem;
     text-transform: uppercase;
-    line-height: 1em
+    line-height: 1em;
+    font-family: "Merriweather";
 }
 
 h2 {
     font-size: 1.999rem;
-    margin: 1em 0 1em 0;
+    padding: 1em 0 1em 0;
 }
 
 h3 {
     font-size: 1.999rem;
-    padding: 1em 0 1em 0;
+    padding: 1em 0;
+    color: #2E317D;
 }
 
 .lower {
@@ -92,7 +127,7 @@ h3 {
 }
 
 div {
-    padding: 0 0 1em 0;
+    padding: 0;
 }
 
 blockquote {
@@ -109,10 +144,10 @@ cite {
 }
 
 header h2 {
+    font-family: "Open Sans";
     font-size: 1.827rem;
     font-style: italic;
     margin-top: -.5em;
-    margin-bottom: 1.5em;
     color: #333333
 }
 
@@ -120,25 +155,52 @@ header p {
     font-size: 1.3rem
 }
 
+.leader {
+    text-transform: lowercase;
+}
+
+.dropcap {
+    font-family: "Merriweather", serif;
+    float: left;
+    line-height: 55%;
+    width: .7em;
+    font-size: 400%;
+    color: #2E317D;
+}
+
 /*-- Stying links ---*/
 a {
-    color: #E46211;
-   text-decoration: none;
+    color: #1F2383;
+    text-decoration: none;
 }
+
 a:hover {
-    color: #333;
+    color: orange;
     border-bottom: 1px dotted;
 }
 
+
+/*--- SET UP A RESPONSIVE NAV --*/
+.responsivenav {
+    background: #2E317D;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ #logo {
+    font-size: 1.5rem;
+    color: #f7f7f7;
+    font-family: "Merriweather", serif;
+    padding-left: 32px;
+ }
+
 /*--- Style Nav ---*/
 nav {
-    top: 0;
-    left: 0;
-    margin: 0;
-    width: 100%;
-    background: #87460D;
-    padding: 3em 0 2em 0;
-    font-size: 0.75rem;
+    display: flex;
+    padding: 2rem 0;
+    font-size: 0.8rem;
 }
 
 nav ul {
@@ -147,40 +209,116 @@ nav ul {
     letter-spacing: 1px;
 }
 
-body ul {
-    padding: 0em 0 1em 0;
-}
-
-nav ul li {
+ nav ul li {
     display: inline;
     margin: 20px;
 }
-
+ 
 nav a {
     color: #f7f7f7;
 }
 
 nav a:hover {
     border-bottom: none;
-    color: rgb(255, 187, 127);
+    color: orange;
     transition: all 0.3s ease-in-out;
 }
 
 .logo {
     font-size: 1.8rem;
     text-align: left;
-    padding-right: 50vw;
+    padding: 1em 0;
     font-family: 'Merriweather', serif;
 }
+/*-- ALIGN IMAGES HORIZONTALLY --*/
 
+.imgsmall {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 0;
+    display: grid;
+    grid-gap: 20px
+}
+
+li {
+    font-style: normal;
+    line-height: 30px;
+}
 footer {
     background: #030307;
     text-align: center;
     font-size: 0.75rem;
     color: #f7f7f7;
-    padding: 4em 0 3em 0
+    padding: 4em 0 3em 0;
 }
 
 footer p {
-    margin: 0.5em 4em 0.5em 4em
+    margin: 0.5em 4em;
 }
+
+footer a {
+    color: #a2a5fd;
+}
+
+footer a:hover {
+    color: #f7f7f7;
+}
+
+ .connections{
+    position: relative;
+    margin: 0 auto;
+}
+
+ .connections ul{
+    margin: 0;
+    padding: 0;
+}
+
+.connections li{
+    margin: 0 10px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;  
+}
+
+.connections a:link{
+    border-bottom: none;       
+}
+
+.connections img, .connections svg{
+    border: none;
+}
+
+.connections a:hover img, .connections a:hover svg{
+    border-bottom: none;
+}
+
+.connections svg {
+    margin: 2rem auto;
+}
+
+.connections a:hover svg path {
+    fill: #333;
+    transition: all 0.2s ease-in-out;
+}
+
+footer .connections a:hover svg path {
+    fill:  blue;
+    transition: all 0.2s ease-in-out;
+}
+
+/*-- ADDING MEIDA QUERIES FOR DIFFERENT DEVICES --*/
+@media screen and (max-width: 600px) {
+    nav {        
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        order: 2;
+        margin-bottom: 10px;
+    }
+}
+
+
+    
