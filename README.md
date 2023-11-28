@@ -10,6 +10,7 @@ Creating my first HTML page
 Added CSS
 
 [Version 3](https://clodaghd1.github.io/women-in-design/index-three.html)
+<br>
 *27 November 2023*
 Final Version
 
