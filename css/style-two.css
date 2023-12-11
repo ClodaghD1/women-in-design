@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1em;
+}
+
+body {
+    background: #f7f7f7;
+    color: #333333;
+    font-family: "Merriweather";
+}
+
+.green {
+    background-color: teal;
+    color: white;
+}
+
+.green h1 {
+    color: white;
+}
+
+.green h2 {
+    color: white;
+}
+
+.green h3 {
+    color: white;
+}
+
+.green p {
+    color: white;
+}
+
+section, header {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+.dropcap {
+    font-family: "Merriweather", serif;
+    float: left;
+    line-height: 55%;
+    width: 7rem;
+
+}
+
+/*---- Styling typography ---*/
+h1, h2, blockquote {
+    color: #1F2383;
+}
+
+p, blockquote, h1 {
+    padding-bottom: 1.5rem;
+    line-height: 1.4;
+    font-family: "Roboto";
+}
+
+ul p {
+    margin: 0.5em 0;
+}
+
+h1 {
+    font-size: 5.653rem;
+    text-transform: uppercase;
+    line-height: 1em;
+    font-family: "Merriweather";
+}
+
+h2 {
+    font-size: 1.999rem;
+    padding: 1em 0 1em 0;
+}
+
+h3 {
+    font-size: 1.999rem;
+    padding: 1em 0;
+    color: teal;
+}
+
+.lower {
+    text-transform: none
+}
+
+div {
+    padding: 0;
+}
+
+blockquote {
+    font-size: 1.414rem;
+    font-style: italic;
+    hanging-punctuation: first;
+    text-indent: -0.5rem
+}
+
+cite {
+    font-size: 0.8em;
+    color: #333333;
+    font-style: normal;
+}
+
+header h2 {
+    font-family: "Open Sans";
+    font-size: 1.827rem;
+    font-style: italic;
+    margin-top: -.5em;
+    color: #333333
+}
+
+header p {
+    font-size: 1.3rem
+}
+
+.leader {
+    text-transform: lowercase;
+}
+
+.dropcap {
+    font-family: "Merriweather", serif;
+    float: left;
+    line-height: 55%;
+    width: .7em;
+    font-size: 400%;
+    color: teal;
+    margin-right: 5px;
+}
+
+/*-- Stying links ---*/
+a {
+    color: #1F2383;
+    text-decoration: none;
+}
+div section ul a{
+    border-bottom: 1px dotted;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+a:hover {
+    color: orange;
+    border-bottom: 1px dotted;
+}
+
+/*--- SET UP A RESPONSIVE NAV --*/
+.responsivenav {
+    background: teal;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 1.8rem;
+    text-align: left;
+    padding-left: 32px;
+    font-family: 'Merriweather', serif;
+}
+
+/*--- Style Nav ---*/
+nav {
+    display: flex;
+    padding: 2rem 0;
+    font-size: 0.8rem;
+}
+
+nav ul {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ nav ul li {
+    display: inline;
+    margin: 20px;
+}
+ 
+nav a {
+    color: #f7f7f7;
+}
+
+nav a:hover {
+    border-bottom: none;
+    color: orange;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo {
+    font-size: 1.8rem;
+    text-align: left;
+    padding: 1em 0;
+    font-family: 'Merriweather', serif;
+}
+/*-- ALIGN IMAGES HORIZONTALLY --*/
+
+.imgsmall {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 0;
+    display: grid;
+    grid-gap: 20px
+}
+
+li {
+    font-style: normal;
+    line-height: 30px;
+}
+footer {
+    background: #030307;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #f7f7f7;
+    padding: 4em 0 3em 0;
+}
+
+footer p {
+    margin: 0.5em 4em;
+}
+
+footer a {
+    color: #a2a5fd;
+    margin: auto;
+}
+
+footer a:hover {
+    color: #f7f7f7;
+}
+
+ .connections{
+    position: relative;
+    margin: 0 auto;
+}
+
+ .connections ul{
+    margin: 0;
+    padding: 0;
+}
+
+.connections li{
+    margin: 0 10px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;  
+}
+
+.connections a:link{
+    border-bottom: none;       
+}
+
+.connections img, .connections svg{
+    border: none;
+}
+
+.connections a:hover img, .connections a:hover svg{
+    border-bottom: none;
+}
+
+.connections svg {
+    margin: 2rem auto;
+}
+
+.connections a:hover svg path {
+    fill: #333;
+    transition: all 0.2s ease-in-out;
+}
+
+footer .connections a:hover svg path {
+    fill: orange;
+    transition: all 0.2s ease-in-out;
+}
+
+/*-- ADDING MEIDA QUERIES FOR DIFFERENT DEVICES --*/
+@media screen and (max-width: 600px) {
+    nav {        
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        order: 2;
+        margin-bottom: 10px;
+    }
+}
