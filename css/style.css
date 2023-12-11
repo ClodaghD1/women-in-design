@@ -12,6 +12,10 @@ body {
     font-family: "Merriweather";
 }
 
+#logo a {
+    border-bottom: none;
+}
+
 section, header {
     width: 80%;
     max-width: 800px;
